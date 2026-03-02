@@ -28,7 +28,6 @@ public class Medico {
 
     private boolean ativo;
 
-
     public Medico(DadosCadastroMedico dados) {
         this.ativo = true;
         this.nome = dados.nome();
@@ -56,5 +55,9 @@ public class Medico {
 
     public void excluir() {
         this.ativo = false;
+    }
+
+    public void ativar() {
+        this.ativo = true;
     }
 }
